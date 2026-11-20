@@ -1,0 +1,1 @@
+# Eso les pasa por no estudiar pues
