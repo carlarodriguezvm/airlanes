@@ -1,0 +1,21 @@
+import mysql.connector 
+
+conexion = mysql.connector.connect(
+    user = "root",
+    password = "database1234",
+    host = "localhost",
+    database = "inventario_productos"
+)
+
+errorConexion = ""
+
+try:
+    conexion = mysql.connector.connect(
+        user = "root",
+        password = "database1234",
+        host = "localhost",
+        database = "inventario_electronica"
+    )
+except mysql.connector.Error as error:
+    conexion = 0
+    errorConexion = error
